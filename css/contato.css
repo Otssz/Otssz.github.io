@@ -1,0 +1,50 @@
+.contato {
+  background: #000;
+  color: #fff;
+}
+
+.contato-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 120px 20px 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.contato-texto {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #ccc;
+}
+
+.contatos-meios li {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contatos-meios li a {
+  color: #fff;
+}
+
+.contatos-copy {
+  grid-column: 1/-1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+@media (width <= 800px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contatos-meios li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
